@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar Ingresso</title>
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'styles/header.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/tickets.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="{% static 'images/logo-branco.png' %}" alt="Logo">
+            <nav>
+                <a href="{% url 'about' %}">Sobre</a>
+                <a class="line" href="{% url 'menu' %}">Cardápio</a>
+                <a class="line" href="{% url 'buy' %}">Comprar</a>
+            </nav>
+        </header>
+        
+        
+        
+
+        <div class="buttons">
+            <button class="addAdultTicketBtn addTicketBtn">
+                <span class="plus-icon">+</span>
+                <div class="text">
+                    <p>Ingresso Adulto</p>
+                </div>
+            </button>
+            <button class="addKidTicketBtn addTicketBtn">
+                <span class="plus-icon">+</span>
+                <div class="text">
+                    <p>Ingresso Criança</p>
+                    <p>(De 5 a 10 anos)</p>
+                </div>
+            </button>
+        </div>
+        
+        <div class="tickets">
+
+        </div>
+
+        <div class="result">
+            <div class="total">
+                <img class="user-icon" src="{% static 'images/user-icon.png' %}" alt="User Icon Image">
+                <p class="total-name">Nome do Comprador</p>
+                <p class="total-text">Total:</p>
+                <p class="total-result">R$00,00</p>
+                <a href=""></a>
+                <button  type="submit" class="pay">Pagar</button>
+            </div>
+            <div class="black-line"></div>
+            <div class="tickets-list">
+
+            </div>
+        </div>
+        
+
+
+    </div>
+
+    <script type="module" src="{% static 'scripts/buy-tickets.js' %}"></script>
+
+</body>
+
+</html>

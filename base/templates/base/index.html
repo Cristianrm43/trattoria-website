@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem Vindo a Trattoria</title>
+    <link rel="stylesheet" href="{% static 'styles/index.css'%}">
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <div class="center">
+            <img class="logo" src="{% static './images/logo.png' %}" alt="Logo">
+        </div>
+        <img class="plant-top-right" src="{% static './images/plants2.png' %}" alt="">
+        <img class="plant-bottom-left" src="{% static './images/plants2.png' %}" alt="">
+        <a href="{% url 'about' %}"><button class="start">COMEÇAR</button></a>
+    </div>
+</body>
+
+</html>

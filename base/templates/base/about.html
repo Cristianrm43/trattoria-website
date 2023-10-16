@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trattoria 2023</title>
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'styles/header.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/about.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/footer.css'%}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+
+
+<body>
+    <div class="container">
+        <header>
+            <img src="{% static 'images/logo-branco.png' %}" alt="Logo">
+            <nav>
+                <a href="{% url 'about' %}">Sobre</a>
+                <a class="line" href="{% url 'menu' %}">Cardápio</a>
+                <a class="line" href="{% url 'buy' %}">Comprar</a>
+            </nav>
+        </header>
+
+        <section class="welcome">
+            <img class="plant1" src="{% static 'images/plants.png' %}" alt="Plants">
+            <img class="plant2" src="{% static 'images/plants.png' %}" alt="Plants">
+            <h1>Bem Vindo</h1>
+            <p class="welcome-p">Bem vindo à Trattoria Arte Italiana, projeto integrado dos cursos técnicos de Administração, Gastronomia e Informática, em que será introduzido uma experiência artística e gastronômica inesquecível para vocês!</p>
+        </section>
+
+        <section class="how-started">
+            <div class="texts">
+                <h1>Trattoria Arte Italiana!</h1>
+                <p>Com o tema Arte Italiana, o evento busca uma imersão na cultura italiana sob seu viés artístico, expondo você a pinturas, poemas, teatros e a deliciosos pratos que remetem essa cultura tão rica</p>
+            </div>
+            <div class="making-pasta">
+                <div class="background">
+                    <div class="making-pasta-img">
+                    </div>
+                </div>
+        </section>
+
+        <section class="participation">
+            <div class="courses">
+                <h1>Participação</h1>
+                <ul>
+                    <li>Curso de Informática</li>
+                    <li>Curso de Gastronomia</li>
+                    <li>Curso de Administração</li>
+                </ul>
+            </div>
+            <div class="btn">
+                <a class="view-menu" href="{% url 'menu' %}">
+               <button class="view-menu-btn">Cardápio</button>
+               <img class="plant-img" src="{% static 'images/plants1.png' %}" alt="">
+            </a>
+            </div>
+        </section>
+
+        <footer>
+            <a target="_blank" href="https://www.instagram.com/trattoria.arteitaliana/"><i class="fab fa-instagram fa-2x"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/migvalentini/"><i class="fab fa-linkedin fa-2x"></i></a>
+        </footer>
+        </div>
+</body>
+
+</html>

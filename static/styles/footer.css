@@ -1,0 +1,11 @@
+footer {
+    width: 100%;
+    background-color: #BF4E30;
+    position: fixed;
+    bottom: 0;
+}
+
+i {
+    color: white;
+    padding-left: 10px;
+}
